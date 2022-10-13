@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '~@fontsource/poppins/100.css';
+@import '~@fontsource/poppins/200.css';
+@import '~@fontsource/poppins/300.css';
+@import '~@fontsource/poppins/400.css';
+@import '~@fontsource/poppins/500.css';
+@import '~@fontsource/poppins/600.css';
+@import '~@fontsource/poppins/700.css';
+@import '~@fontsource/poppins/800.css';
+@import '~@fontsource/poppins/900.css';
+
+@layer base {
+  html {
+    @apply font-['Poppins'];
+  }
+  body {
+    @apply bg-[#202124] text-white;
+  }
+}
+
+@layer components {
+  .mainContainer {
+    @apply flex flex-col justify-center items-center min-h-screen;
+  }
+  .mainContainerWithTopbar {
+    @apply mainContainer min-h-[calc(100vh-97px)];
+  }
+}
+
+@layer utilities {
+  .active {
+    @apply border-b-2;
+  }
+  .link {
+    @apply hover:border-b-2 border-white active:outline-none outline-none focus:outline-none h-7;
+  }
+  
+}
